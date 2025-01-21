@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Window */
+QMainWindow {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Status Bar */
+QStatusBar {
+  background-color: #f8f9fa;
+  color: #555;
+  font-size: 12px;
+  border-top: 1px solid #ddd;
+}
+
+/* Labels */
+QLabel {
+  font-size: 14px;
+  color: #333;
+}
+
+QLabel#title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Scroll Area */
+QScrollArea {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+
+
+/* Buttons */
+QPushButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+QPushButton:hover {
+  background-color: #0056b3;
+}
+
+QPushButton:pressed {
+  background-color: #004085;
+}
+
+/* Table */
+QTableWidget {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+  font-size: 13px;
+}
+
+QTableWidget::item {
+  padding: 5px;
+}
+
+QTableWidget::item:selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Bar Chart */
+QChartView {
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Health Visualization Grid */
+QGridLayout QLabel {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+
+QGridLayout QLabel[style*="background-color: green"] {
+  color: white;
+}
+
+QGridLayout QLabel[style*="background-color: red"] {
+  color: white;
+}
+
+QGridLayout QLabel[style*="background-color: orange"] {
+  color: black;
+}
+
+/* No Device Message */
+QLabel#no-device-message {
+  font-size: 14px;
+  color: #ff4d4f;
+  text-align: center;
+  margin: 20px 0;
+}
+
